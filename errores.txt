@@ -1,5 +1,17 @@
 Error 1:
 
+  En el archivo styles.css, la regla :root { } permite declarar variables, pero la propiedad tiene que comenzar como --tipo: valor; 
+
+  No está siendo aplicada, así que la regla podría eliminarse.
+
 Error 2:
 
+  En el archivo styles.css, sa regla #navigation__link utiliza un selector de ID, pero en el documento html se utiliza selector de class. Las clases se reutilizan en las diversas <a> del menú de navegación. Mientras en las class se puede repetir el mismo valor, con las ID esto sería incorrecto.
+  
+  Cambiamos #navigation__link a .navigation__link en el archivo styles.css, porque el punto delante del valor significa selector de clase y enlaza con el que hay en el HTML.
+
 Error 3: 
+
+  En el archivo styles.css, el selector .navigation es el padre flex que otorga propiedades a sus ítems flex, pero para distribuir los elementos <a> en el eje principal (main axis), la propiedad utilizada no es la correcta.
+
+  Hay que cambiar la propiedad align-content por justify-content.
