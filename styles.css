@@ -28,4 +28,10 @@ body {
     border-radius: 3rem;
     padding: 1rem 2rem;
     font-size: 1.5rem;
+    transition:1s;
+}
+
+.navigation__link:hover {
+    color:#0aa1dd;
+    background: white;
 }

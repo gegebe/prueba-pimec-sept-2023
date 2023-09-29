@@ -1,8 +1,6 @@
 Error 1:
 
-  En el archivo styles.css, la regla :root { } permite declarar variables, pero la propiedad tiene que comenzar como --tipo: valor; 
-
-  No está siendo aplicada, así que la regla podría eliminarse.
+  Faltaba la regla :hover para mostrar fondo blanco y letra azul, al pasar el cursor por encima.
 
 Error 2:
 
@@ -15,3 +13,13 @@ Error 3:
   En el archivo styles.css, el selector .navigation es el padre flex que otorga propiedades a sus ítems flex, pero para distribuir los elementos <a> en el eje principal (main axis), la propiedad utilizada no es la correcta.
 
   Hay que cambiar la propiedad align-content por justify-content.
+
+  -------?-------
+
+  No tiene que ver con el README, pero en el archivo styles.css, la regla :root { } permite declarar variables, pero la propiedad tiene que comenzar como --tipo: valor; para luego ser aplicada con var(--tipo), no la he visto aplicada en el documento.
+
+  No está siendo aplicada, así que la regla podría eliminarse.
+
+  -------BONUS-------
+
+  Para la transición entre estado normal y encima, se ha añadido un transition:1s; a la regla .navigation__link, porque de esta manera al hacer :hover, pasar por encima, el efecto tardará un 1 segundo en tomar lugar.
